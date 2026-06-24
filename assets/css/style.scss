@@ -1,0 +1,170 @@
+---
+---
+@import "minima";
+
+/* ── 기본 ── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+  background: #FFF5B7;
+  color: #222;
+  line-height: 1.8;
+}
+
+/* ── 헤더 ── */
+.site-header {
+  background: linear-gradient(135deg, #FF9A3C, #FF6B2B);
+  border-bottom: none;
+  min-height: 64px;
+  box-shadow: 0 4px 16px rgba(255, 107, 43, 0.3);
+}
+
+.site-title,
+.site-title:visited {
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+.site-title:hover { color: #FFF5B7; text-decoration: none; }
+
+.site-nav { background: transparent; }
+.site-nav .page-link {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.site-nav .page-link:hover { color: #FFF5B7; text-decoration: none; }
+
+/* ── 레이아웃 ── */
+.page-content { padding: 2.5rem 0 3rem; }
+.wrapper      { max-width: 860px; }
+
+.page-heading,
+h1.post-title,
+.page-content h1 {
+  font-size: 1.9rem;
+  font-weight: 900;
+  color: #FF6B2B;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid #FF6B2B;
+  display: inline-block;
+}
+
+/* ── 히어로 배너 (index.md 블록쿼트) ── */
+.page-content blockquote {
+  background: linear-gradient(135deg, #FF9A3C, #FF6B2B);
+  border-left: none;
+  border-radius: 20px;
+  padding: 1.5rem 2rem;
+  margin: 0 0 2.5rem;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(255, 107, 43, 0.3);
+}
+.page-content blockquote p {
+  margin: 0;
+  font-size: 0.97rem;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 0;
+}
+.page-content blockquote strong { color: #FFF5B7; }
+
+/* ── 포스트 카드 목록 ── */
+.post-list h3 {
+  background: #fff;
+  border-radius: 20px 20px 0 0;
+  padding: 1.3rem 1.5rem 0.6rem;
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.5;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border-left: none;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.post-list h3 a {
+  color: #222;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.post-list h3 a:hover { color: #FF6B2B; }
+
+.post-list h3 + p {
+  background: #fff;
+  border-radius: 0 0 20px 20px;
+  padding: 0.4rem 1.5rem 1.1rem;
+  margin: 0 0 1.25rem;
+  font-size: 0.83rem;
+  color: #888;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border-left: none;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.post-list h3:hover,
+.post-list h3:hover + p {
+  box-shadow: 0 8px 24px rgba(255, 107, 43, 0.2);
+  transform: translateY(-3px);
+}
+
+/* 카테고리 뱃지 */
+.post-list h3 + p code {
+  background: #FFF0E5;
+  color: #FF6B2B;
+  border: 1px solid #FFD4B3;
+  border-radius: 999px;
+  padding: 0.1em 0.6em;
+  font-size: 0.82em;
+  font-weight: 700;
+  font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+}
+
+.post-list hr { border: none; margin: 0; }
+
+/* ── 포스트 본문 ── */
+.post-content {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2.5rem 3rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  margin-top: 1.5rem;
+}
+.post-content h2 {
+  color: #FF6B2B;
+  border-bottom: 2px solid #FFF0E5;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+.post-content h3 { color: #333; }
+.post-content a  { color: #FF6B2B; text-decoration: underline; }
+
+code {
+  background: #FFF0E5;
+  color: #FF6B2B;
+  padding: 0.15em 0.45em;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+/* ── 푸터 ── */
+.site-footer {
+  background: linear-gradient(135deg, #FF9A3C, #FF6B2B);
+  color: rgba(255, 255, 255, 0.85);
+  border-top: none;
+  padding: 2rem 0;
+}
+.site-footer a { color: #FFF5B7; }
+.site-footer a:hover { color: #fff; text-decoration: none; }
+.footer-col-wrapper { color: rgba(255, 255, 255, 0.85); }
+
+/* ── 반응형 ── */
+@media (max-width: 600px) {
+  .post-list h3     { padding: 1rem 1.1rem 0.5rem; }
+  .post-list h3 + p { padding: 0.3rem 1.1rem 0.9rem; }
+  .page-content blockquote { padding: 1.2rem 1.3rem; }
+  .post-content     { padding: 1.5rem 1.2rem; }
+}

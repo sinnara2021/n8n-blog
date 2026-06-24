@@ -1,0 +1,5 @@
+title: "나의 AI 블로그"          # TODO: 블로그 이름으로 바꾸세요
+description: "n8n + Solar AI가 자동 생성하는 블로그"
+theme: minima
+lang: ko
+permalink: /posts/:year/:month/:day/:slug/
