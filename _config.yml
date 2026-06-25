@@ -1,5 +1,31 @@
-title: "나의 AI 블로그"          # TODO: 블로그 이름으로 바꾸세요
+title: "나의 AI 블로그"
 description: "n8n + Solar AI가 자동 생성하는 블로그"
-theme: minima
 lang: ko
 permalink: /posts/:year/:month/:day/:slug/
+
+remote_theme: daattali/beautiful-jekyll
+
+# 프로필
+avatar: "https://github.com/sinnara2021.png"
+round-avatar: true
+github-username: sinnara2021
+
+# 상단 네비게이션
+navbar-links:
+  홈: ""
+  GitHub: "https://github.com/sinnara2021/n8n-blog"
+
+# 컬러 테마 (다크 네이비 + 퍼플 포인트)
+navbar-col: "#1a1a2e"
+navbar-text-col: "#ffffff"
+navbar-children-col: "#16213e"
+footer-col: "#1a1a2e"
+footer-text-col: "#aaaaaa"
+page-col: "#ffffff"
+text-col: "#333333"
+link-col: "#6C63FF"
+hover-col: "#5a52d5"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
