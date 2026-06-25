@@ -7,23 +7,21 @@ remote_theme: daattali/beautiful-jekyll
 
 github-username: sinnara2021
 
-# 상단 탭 4개
+# 상단 네비게이션
 navbar-links:
   홈: ""
-  AI: "tags#AI"
-  기술: "tags#기술"
   GitHub: "https://github.com/sinnara2021/n8n-blog"
 
 # 컬러 테마
-navbar-col:          "#ffffff"
-navbar-text-col:     "#999999"
-navbar-children-col: "#f5f5f5"
+navbar-col:          "#1A1C2E"
+navbar-text-col:     "#ffffff"
+navbar-children-col: "#16213e"
 footer-col:          "#1A1C2E"
 footer-text-col:     "#9ba5c9"
 page-col:            "#F4F4FA"
 text-col:            "#1A1C2E"
 link-col:            "#5B67E8"
-hover-col:           "#333333"
+hover-col:           "#4a55d0"
 
 # 커스텀 CSS
 site-css:
