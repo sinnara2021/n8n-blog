@@ -5,7 +5,7 @@
    Primary : #5B67E8 indigo
    Navy    : #1A1C2E dark navy
    BG      : #F4F4FA light gray
-   Font    : Noto Sans KR
+   Font    : Noto Sans KR · compact size
 ────────────────────────────────────────── */
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;800&display=swap');
@@ -28,18 +28,20 @@
 
 body {
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  font-size: 0.93rem;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.82;
+  line-height: 1.78;
 }
 
 /* ── NAVBAR ── */
 .navbar {
+  font-size: 0.85rem;
   box-shadow: 0 2px 16px rgba(26,28,46,.22);
 }
 .navbar-brand {
   font-weight: 900;
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   letter-spacing: -.01em;
 }
 
@@ -47,35 +49,49 @@ body {
 .intro-header .site-heading,
 .intro-header .page-heading,
 .intro-header .post-heading {
-  padding: 72px 0 50px;
+  padding: 52px 0 38px;
 }
 .intro-header h1 {
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 900;
-  font-size: 2.4rem;
+  font-size: 1.85rem;
   letter-spacing: -.02em;
 }
 .intro-header .post-subheading,
 .intro-header .site-subheading {
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   opacity: .88;
+}
+
+/* ── HOME 인트로 콘텐츠 ── */
+.container-md blockquote,
+.container blockquote,
+.post-container blockquote {
+  border-left: 4px solid var(--primary);
+  background: var(--indigo-lt);
+  padding: 10px 16px;
+  border-radius: 0 8px 8px 0;
+  color: var(--muted);
+  margin: 1rem 0;
+  font-style: normal;
+  font-size: 0.88rem;
 }
 
 /* ── POST CARDS (home) ── */
 .post-preview {
   background: var(--card);
-  border-radius: 14px;
+  border-radius: 12px;
   border: 1.5px solid var(--border);
-  padding: 22px 26px;
-  margin-bottom: 18px;
+  padding: 18px 22px;
+  margin-bottom: 14px;
   transition: box-shadow .2s, transform .15s;
 }
 .post-preview:hover {
-  box-shadow: 0 6px 28px rgba(91,103,232,.14);
+  box-shadow: 0 6px 24px rgba(91,103,232,.13);
   transform: translateY(-2px);
 }
 .post-preview > a > .post-title {
-  font-size: 1.22rem;
+  font-size: 1.02rem;
   font-weight: 800;
   color: var(--dark-navy);
   transition: color .15s;
@@ -86,18 +102,18 @@ body {
   text-decoration: none;
 }
 .post-preview > a > .post-subtitle {
-  font-size: .91rem;
+  font-size: 0.84rem;
   color: var(--muted);
-  margin-top: 5px;
+  margin-top: 4px;
 }
 .post-preview .post-meta {
-  font-size: .8rem;
+  font-size: 0.76rem;
   font-weight: 700;
   color: var(--primary) !important;
 }
 .post-preview hr {
   border-color: var(--border);
-  margin: 14px 0;
+  margin: 12px 0;
 }
 
 /* ── TAGS / BADGES ── */
@@ -107,8 +123,8 @@ body {
   background: var(--indigo-lt);
   color: var(--primary);
   border-radius: 6px;
-  padding: 2px 11px;
-  font-size: .79rem;
+  padding: 1px 9px;
+  font-size: 0.75rem;
   font-weight: 700;
   text-decoration: none;
   margin: 2px 2px 2px 0;
@@ -128,50 +144,64 @@ a:hover { color: var(--primary-d); }
 /* ── POST CONTENT ── */
 .post-content,
 .page-content {
-  line-height: 1.88;
+  font-size: 0.93rem;
+  line-height: 1.85;
 }
 .post-content h2 {
+  font-size: 1.15rem;
   color: var(--dark-navy);
   font-weight: 800;
   border-bottom: 2px solid var(--border);
-  padding-bottom: .4rem;
-  margin-top: 2.2rem;
+  padding-bottom: .35rem;
+  margin-top: 2rem;
 }
-.post-content h3,
-.post-content h4 {
+.post-content h3 {
+  font-size: 1.02rem;
   color: var(--dark-navy);
   font-weight: 800;
-  margin-top: 1.8rem;
+  margin-top: 1.6rem;
+}
+.post-content h4 {
+  font-size: 0.95rem;
+  color: var(--dark-navy);
+  font-weight: 800;
+  margin-top: 1.4rem;
+}
+.post-content p,
+.post-content li {
+  font-size: 0.93rem;
+  color: var(--muted);
 }
 
 /* ── BLOCKQUOTE ── */
 blockquote {
   border-left: 4px solid var(--primary);
   background: var(--indigo-lt);
-  padding: 14px 20px;
-  border-radius: 0 10px 10px 0;
+  padding: 11px 16px;
+  border-radius: 0 8px 8px 0;
   color: var(--muted);
-  margin: 1.2rem 0;
+  margin: 1rem 0;
   font-style: normal;
+  font-size: 0.88rem;
 }
 
 /* ── CODE ── */
 pre {
   background: var(--dark-navy) !important;
   color: #cdd6f4 !important;
-  border-radius: 12px !important;
-  padding: 16px 20px !important;
-  font-size: .87rem !important;
-  line-height: 1.72 !important;
+  border-radius: 10px !important;
+  padding: 14px 18px !important;
+  font-size: 0.82rem !important;
+  line-height: 1.7 !important;
   border: none !important;
-  box-shadow: 0 4px 16px rgba(26,28,46,.18);
+  box-shadow: 0 4px 14px rgba(26,28,46,.16);
 }
 code {
   background: var(--indigo-lt);
   color: var(--primary);
-  padding: .15em .45em;
+  padding: .13em .42em;
   border-radius: 4px;
-  font-size: .85em;
+  font-size: 0.82em;
   font-family: 'Fira Code', 'Consolas', monospace;
 }
 pre code {
@@ -185,8 +215,8 @@ pre code {
 table {
   width: 100%;
   border-collapse: collapse;
-  font-size: .9rem;
-  margin: 14px 0;
+  font-size: 0.85rem;
+  margin: 12px 0;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 1px 8px rgba(26,28,46,.07);
@@ -195,14 +225,16 @@ th {
   background: var(--indigo-lt);
   color: var(--primary);
   font-weight: 800;
-  padding: 10px 16px;
+  padding: 8px 14px;
   border-bottom: 2px solid var(--blue-light);
   text-align: left;
+  font-size: 0.85rem;
 }
 td {
-  padding: 9px 16px;
+  padding: 7px 14px;
   border-bottom: 1px solid var(--border);
   color: var(--muted);
+  font-size: 0.85rem;
 }
 tr:last-child td { border-bottom: none; }
 tr:hover td { background: var(--bg); }
@@ -210,36 +242,30 @@ tr:hover td { background: var(--bg); }
 /* ── FOOTER ── */
 footer {
   background: var(--dark-navy) !important;
+  font-size: 0.82rem;
 }
-.footer-col-wrapper {
-  color: #9ba5c9;
-}
-footer a {
-  color: #A5ADFF !important;
-}
-footer a:hover {
-  color: #fff !important;
-  text-decoration: none;
-}
+.footer-col-wrapper { color: #9ba5c9; }
+footer a { color: #A5ADFF !important; }
+footer a:hover { color: #fff !important; text-decoration: none; }
 
 /* ── HR ── */
 hr { border-color: var(--border); }
 
 /* ── BUTTONS ── */
-.btn-primary,
-.btn-success {
+.btn-primary, .btn-success {
   background: var(--primary) !important;
   border-color: var(--primary) !important;
+  font-size: 0.85rem;
 }
-.btn-primary:hover,
-.btn-success:hover {
+.btn-primary:hover, .btn-success:hover {
   background: var(--primary-d) !important;
   border-color: var(--primary-d) !important;
 }
 
 /* ── 반응형 ── */
 @media (max-width: 768px) {
-  .intro-header h1 { font-size: 1.65rem; }
-  .post-preview { padding: 16px 18px; }
-  .post-preview > a > .post-title { font-size: 1.08rem; }
+  body { font-size: 0.9rem; }
+  .intro-header h1 { font-size: 1.45rem; }
+  .post-preview { padding: 14px 16px; }
+  .post-preview > a > .post-title { font-size: 0.95rem; }
 }
