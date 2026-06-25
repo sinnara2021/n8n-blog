@@ -262,6 +262,39 @@ hr { border-color: var(--border); }
   border-color: var(--primary-d) !important;
 }
 
+/* ── FORTUNE COOKIE HEADER ── */
+.cookie-header {
+  text-align: center;
+  padding: 18px 0 8px;
+}
+.cookie-wrap {
+  position: relative;
+  display: inline-block;
+}
+.cookie-img {
+  font-size: 52px;
+  display: block;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+  animation: cookie-float 3s ease-in-out infinite;
+}
+@keyframes cookie-float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-7px); }
+}
+.cookie-wrap .star {
+  position: absolute;
+  font-size: 13px;
+  animation: cookie-twinkle 2s ease-in-out infinite;
+}
+.cookie-wrap .star:nth-child(1) { top: 8px;  left: 16px;  animation-delay: 0.3s; }
+.cookie-wrap .star:nth-child(2) { top: 0px;  right: 22px; animation-delay: 0.8s; }
+.cookie-wrap .star:nth-child(3) { bottom: 16px; left: 8px;  animation-delay: 1.2s; font-size: 10px; }
+.cookie-wrap .star:nth-child(4) { bottom: 8px;  right: 14px; animation-delay: 0.5s; font-size: 11px; }
+@keyframes cookie-twinkle {
+  0%, 100% { opacity: 1;   transform: scale(1);   }
+  50%       { opacity: 0.4; transform: scale(0.75); }
+}
+
 /* ── 반응형 ── */
 @media (max-width: 768px) {
   body { font-size: 0.9rem; }

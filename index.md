@@ -4,6 +4,16 @@ title: 나의 AI 블로그
 subtitle: 🤖 n8n + Solar AI가 자동으로 작성합니다
 ---
 
+<div class="cookie-header">
+  <div class="cookie-wrap">
+    <span class="star">⭐</span>
+    <span class="star">✨</span>
+    <span class="star">⭐</span>
+    <span class="star">✨</span>
+    <span class="cookie-img">🥠</span>
+  </div>
+</div>
+
 > 📋 주제 입력 &nbsp;→&nbsp; 🤖 Solar AI 작성 &nbsp;→&nbsp; 🐙 GitHub 커밋 &nbsp;→&nbsp; 🌐 자동 발행
 
 | 🔧 노드 | 📌 역할 |
